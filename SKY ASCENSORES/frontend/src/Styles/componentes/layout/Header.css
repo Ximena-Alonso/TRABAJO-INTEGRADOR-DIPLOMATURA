@@ -1,0 +1,20 @@
+
+header{
+    background: rgb(190,246,233);
+    background: linear-gradient(0deg, rgba(190,246,233,1) 0%, rgba(80,251,234,0.969625350140056) 60%);
+    font-family: Mochiy Pop P One;
+}
+
+header h1{
+    font-size: 20px;
+    display: inline;
+    position: relative;
+    bottom: 30px;
+    color: black;
+}
+
+header img{
+    border-radius: 50%;
+    width: 100px;
+    margin: 5px 0 0 30px;
+}

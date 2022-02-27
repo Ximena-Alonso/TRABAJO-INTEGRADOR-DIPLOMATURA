@@ -1,0 +1,53 @@
+.nos h2{
+    margin-bottom: 1px;
+    margin-top: 0;
+}
+
+#nosotros .nos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#nosotros .descripcion{  
+    text-align: justify;
+}
+
+#nosotros .descripcion img{
+    margin: 15px 10px;
+    width: 100%; 
+    align-items: center;
+}
+
+#nosotros .personas{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;    
+}
+
+#nosotros .persona{
+    margin-left: 2.3%;
+    border: grey solid 1px;
+    border-radius: 0.25em;
+    max-width: -webkit-fill-available;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#nosotros .persona:first-child{
+    margin-left: 0;
+}   
+
+#nosotros .persona img{
+    border-radius: 50%;
+    margin: 0.8em;   
+}
+
+#nosotros .persona h5, 
+#nosotros .persona h6{
+    margin: 0;
+    font-size: 1.1em;
+}
+#nosotros .persona p{
+    margin: 5px;
+    font-size: 0.83em;
+}
