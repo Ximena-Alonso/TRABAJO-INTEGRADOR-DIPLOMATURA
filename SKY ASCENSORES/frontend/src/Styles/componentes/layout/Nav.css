@@ -18,9 +18,11 @@ nav ul li{
     border: #c5ddd7 solid 1px;
     border-bottom: none;
     height: 30px;
+    display: inline-flex;
 }
 
 nav ul li a{
+    width: 100%;
     text-decoration: none;
     color: black;
     font-weight: bold;
