@@ -18,7 +18,7 @@ nav ul li{
     border: #c5ddd7 solid 1px;
     border-bottom: none;
     height: 30px;
-    display: inline-flex;
+    display: flex;
 }
 
 nav ul li a{
