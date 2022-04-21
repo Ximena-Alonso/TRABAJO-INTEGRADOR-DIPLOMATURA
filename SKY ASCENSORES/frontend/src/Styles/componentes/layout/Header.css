@@ -1,3 +1,6 @@
+.holder{
+    margin:0 8px 0 8px;
+}
 
 header{
     background: rgb(190,246,233);
@@ -6,10 +9,10 @@ header{
 }
 
 header h1{
-    font-size: 20px;
+    font-size: 1.5em;
     display: inline;
     position: relative;
-    bottom: 30px;
+    bottom: 0px;
     color: black;
 }
 
@@ -17,4 +20,11 @@ header img{
     border-radius: 50%;
     width: 100px;
     margin: 5px 0 0 30px;
+}
+
+@media (max-width:390px) {
+    header h1{
+        font-size: 1em;
+        
+    }   
 }
