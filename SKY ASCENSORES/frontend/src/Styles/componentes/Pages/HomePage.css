@@ -45,9 +45,8 @@
     transform: scale(1.05, 1);
 }
 
-@media  (max-width:500px) {
+@media  (max-width:590px) {
     #empresa .row{
-        
         font-size: 0.9em;  
     }
 
@@ -56,12 +55,31 @@
     }
 
     #empresa .accordion-body{
+        font-size: 1em;
+    }
+    
+    #empresa .card-text {
+        font-size: 0.9em;
+    }
+  
+}
+
+@media  (max-width:390px) {
+    #empresa .row{
+        font-size: 0.7em;  
+    }
+
+    #empresa .accordion-button{
+        font-size: 0.5em;
+    }
+
+    #empresa .accordion-body{
         font-size: 0.8em;
     }
     
-    #empresa h3{
-        text-align: center;
-        font-size: 1.3em;
+    #empresa .card-text {
+        font-size: 1em;
     }
+  
    
 }

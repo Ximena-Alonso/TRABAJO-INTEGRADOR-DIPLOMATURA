@@ -6,7 +6,7 @@ const GaleriaPage = (props)=>{
             <div className='galeria'>
                 <p>SKY ASCENSORES es un protagonista dinámico que participa en forma activa en el desarrollo, fabricación e instalación de una amplia gama de medios de elevación que brindan la solución perfecta para necesidades del transporte vertical.</p>
                 <div className='hidraulicos'>
-                    <h2>HIDRAULICOS</h2>
+                    <h3>HIDRAULICOS</h3>
                     <div className='foto'>
                         <img src='images/Galeria/hidra/imag1.jpg' alt='hidra1'></img>
                     </div>
@@ -30,7 +30,7 @@ const GaleriaPage = (props)=>{
                     </div>
                 </div>
                 <div className='panoramicos'>
-                    <h2>PANORAMICOS</h2>
+                    <h3>PANORAMICOS</h3>
                     <div className='foto'>
                         <img src='images/Galeria/panora/panor1.jpg' alt='panor1'></img>
                     </div>
@@ -51,7 +51,7 @@ const GaleriaPage = (props)=>{
                     </div>
                 </div>
                 <div className='vehiculares'>
-                    <h2>VEHICULARES</h2>
+                    <h3>VEHICULARES</h3>
                     <div className='foto'>
                         <img src='images/Galeria/vehic/vehic1.jpg' alt='vehic1'></img>
                     </div>

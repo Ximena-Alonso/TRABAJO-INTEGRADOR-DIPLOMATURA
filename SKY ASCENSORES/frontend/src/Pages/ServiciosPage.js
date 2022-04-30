@@ -5,7 +5,7 @@ const ServiciosPage = (props)=>{
         <seccion className='holder' id='servicios' >
             <div className='ser_img'>
                 <img src='images/servicios/serv.jpg' alt='serv'/>
-                <h2>Nuestro compromiso es aportar valor mediante la innovación permanente y la búsqueda activa de nuevas soluciones tecnológicas. Gracias a esta filosofía hoy ocupamos una posición de liderazgo a nivel internacional.</h2>
+                <h3>Nuestro compromiso es aportar valor mediante la innovación permanente y la búsqueda activa de nuevas soluciones tecnológicas. Gracias a esta filosofía hoy ocupamos una posición de liderazgo a nivel internacional.</h3>
             </div>
             <div className='servicios'>
                 <img src='images/servicios/serv1.jpg' alt='serv1'/>

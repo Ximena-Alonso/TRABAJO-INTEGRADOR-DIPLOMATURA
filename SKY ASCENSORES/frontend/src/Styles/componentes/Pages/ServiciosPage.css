@@ -3,8 +3,7 @@
     width: 100%;
 }
 
-#servicios .ser_img h2{
-    font-size: 1.4em;
+#servicios .ser_img h3{
     text-align: center;
     line-height: 30px;
 }
@@ -15,17 +14,16 @@
     margin: 1em 0;
     padding: 1em;
     overflow: hidden;
+    width: 100%;
 }
 
 #servicios .servicios h4{
-    font-size: 1.3em;
     font-style: italic;
     border-bottom: 1px solid rgb(18, 126, 161);
     margin: 10px 0;
 }
 
 #servicios .servicios p{
-    font-size: 0.8em;
     text-align: justify;
 }
 
@@ -52,4 +50,19 @@
 
 #servicios .servicios:nth-child(odd) .ser_info{
     float: right;
+}
+
+@media  (max-width:590px) {
+    #servicios .servicios .ser_info,
+    #servicios .servicios img{
+        float: none  !important;
+    }
+   
+    #servicios .servicios .ser_info{
+        width: 100%;
+    }   
+    
+    #servicios .servicios img{
+        display: none;
+    }
 }

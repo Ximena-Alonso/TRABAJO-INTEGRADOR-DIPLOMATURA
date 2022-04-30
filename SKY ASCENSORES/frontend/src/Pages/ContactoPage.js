@@ -10,6 +10,7 @@ const ContactoPage = (props)=>{
                 <p>Conozca las posibles mejoras en el servicio de mantenimiento, las soluciones en accesibilidad para hogares, empresas o instituciones.</p>
                 <p>Seguro podemos acercarle la solución que busca.</p>
             </div>
+            
             <div className='columnas'>
                 <div className='columna left'>
                     <h3>Oficina comercial</h3>
@@ -17,11 +18,12 @@ const ContactoPage = (props)=>{
                     <p>Telefono: (0223) 455-1111 / 455-1112</p>
                     <p>WhatsApp: +223 555-1112</p>
                     <div className='redes'>
-                        <i className="fab fa-facebook">  Facebook: Sky Ascensores</i>
-                        <i className="fab fa-instagram"> Instagram: Sky Ascensores</i>
-                        <i className="fab fa-twitter"> Twiter: Sky Ascensores</i>
-                        <i className="fas fa-at"> Email: contacto@skyascensores</i>
+                        <i className="fab fa-facebook">  <b>Facebook: Sky Ascensores</b></i>
+                        <i className="fab fa-instagram">  <b>Instagram: Sky Ascensores</b></i>
+                        <i className="fab fa-twitter">  <b>Twiter: Sky Ascensores</b></i>
+                        <i className="fas fa-at">Email: contacto@skyascensores</i>
                     </div>
+                    
                 </div>
                 <div className='columna right'>
                     <h2>Contactese con nosotros</h2>

@@ -1,7 +1,6 @@
 #contacto .columnas{
     margin-top: 40px;
     display: flex;
-    
 }
 
 #contacto .columna{
@@ -23,7 +22,6 @@
 
 #contacto .columna.left{
    width: 40%;
-    
 }
 
 #contacto .redes {
@@ -32,9 +30,10 @@
 }
 
 #contacto .redes i {
-    padding: 10px;
-    font-size: 1.1em;
-    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 1em;
+    
+    
 }
 
 #contacto i:hover{
@@ -43,9 +42,7 @@
 
 #contacto .columna.right{
     break-before: column ;
-    width: 60%;
-    
-    
+    width: 60%;    
 }
 
 #contacto .formulario label{
@@ -54,6 +51,7 @@
     display: inline-block;
     height: 40px;
     text-align: center;
+    font-size: 12px;
 }
 
 #contacto .formulario input,
@@ -85,5 +83,38 @@
 }
 
 #contacto .formulario .centrar{
-    text-align: center;
+    margin-left: 25%;
+}
+
+@media  (max-width:590px) {   
+    #contacto .redes i {
+        font-size: 0.83em;
+      
+    }
+
+    #contacto .formulario label{
+        font-size: 0.8em;
+    }
+}
+
+@media  (max-width:490px) {
+    #contacto .columnas{
+        display: block;
+    }
+
+    #contacto .columna.left{
+        width: 100%;
+    }
+
+    #contacto .columna.columna.right{
+        width: 100%;
+    }
+/*
+    
+    #contacto .redes i {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+*/
+  
 }

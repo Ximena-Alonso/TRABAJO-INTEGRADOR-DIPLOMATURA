@@ -1,11 +1,7 @@
-.nos h2{
+#nosotros h3{
     margin-bottom: 1px;
     margin-top: 0;
-}
-
-#nosotros .nos{
-    display: flex;
-    flex-direction: column-reverse;
+    font-size: 1.4em;
 }
 
 #nosotros .descripcion{  
@@ -14,32 +10,81 @@
 
 #nosotros .descripcion img{
     margin: 15px 10px;
-    width: 100%; 
+    max-width: 100%; 
     align-items: center;
+    display: flex;
 }
 
-#nosotros .personas{
+
+#nosotros .container {
+    align-items: center;
+	justify-content: center;
     display: flex;
-    flex-direction: row;
-    overflow: auto;    
+    
+ }
+
+ @-webkit-keyframes scroll {
+    0%{
+       -webkit-transform: translateX(calc(-100%*0));
+       transform: translateX(calc(-100%*0));
+   }
+   100%{
+       -webkit-transform: translateX(calc(-30%*3));
+       transform: translateX(calc(-30%*3));
+   }
+}
+
+ @keyframes scroll {
+     0%{
+        -webkit-transform: translateX(calc(-100%*0));
+        transform: translateX(calc(-100%*0));
+    }
+	100%{
+        -webkit-transform: translateX(calc(-30%*3));
+        transform: translateX(calc(-30%*3));
+    }
+}
+
+/*@keyframes scroll {
+	0% { margin-left: 0; }
+	50% { margin-left: 0;}
+
+    51% { margin-left:-100%; }
+	100% { margin-left: -100%;}
+}
+*/
+ #nosotros .slider .personas {
+    -webkit-animation: scroll 10s linear infinite ;
+    animation: scroll 10s linear infinite ;
+    display: flex;
+	width: calc(30%*6);  
+   
+    
+    
+    
 }
 
 #nosotros .persona{
-    margin-left: 2.3%;
+    margin-left: 1%;
     border: grey solid 1px;
     border-radius: 0.25em;
-    max-width: -webkit-fill-available;
     box-sizing: border-box;
     text-align: center;
+    max-width: 30%;    
 }
 
-#nosotros .persona:first-child{
+/*#nosotros .grupos:first-child{
     margin-left: 0;
 }   
 
+#nosotros .grupos:last-child{
+    margin-right: 0;
+    break-after: right;
+}   */
 #nosotros .persona img{
     border-radius: 50%;
-    margin: 0.8em;   
+    margin: 0.8em;  
+    max-width: 90%; 
 }
 
 #nosotros .persona h5, 
@@ -50,4 +95,77 @@
 #nosotros .persona p{
     margin: 5px;
     font-size: 0.83em;
+}
+
+#nosotros .slider {
+	background: white;
+	box-shadow: 8px -9px 9px 0px rgb(0 0 0 / 13%);
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+    width: 95% ;
+}
+
+#nosotros .slider::before,
+#nosotros .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+		content: "";
+		
+		position: absolute;
+		width: 20%;
+		z-index: 2;
+	}
+
+#nosotros .personas::after {
+		right: 0;
+		top: 0;
+	-webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+}
+
+	#nosotros .slider::before {
+		left: 0;
+		top: 0;
+	}    
+
+/*#nosotros .slider {
+        max-width: 100%;
+        width: 1000px;
+        display: flex;
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+}
+
+#nosotros .grupos {
+    display: flex;
+    flex-direction: row;
+    transform: translatex(0);
+    transition: all 600ms;
+    animation: scroll 10s linear infinite alternate ;
+
+
+}*/
+
+
+    
+    
+@media  (max-width:590px) {
+     h3{
+        font-size: 1.2em;
+    }   
+
+     p{
+        font-size: 0.83em;
+    }   
+}
+
+@media (max-width:390px) {
+     h3{
+        font-size: 1em;
+    }   
+
+     p{
+        font-size: 0.73em;
+    }    
 }
