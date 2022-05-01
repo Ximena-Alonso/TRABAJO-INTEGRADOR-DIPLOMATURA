@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import NovedadItem from '../componentes/novedades/novedadItem';
-var cloudinary =require ('cloudinary').v2;
 
-import '../Styles/Novedades.css';
+
+/*import '../Styles/Novedades.css';*/
 
 const NovedadesPage= (props)=>{
     const [loading, setLoading] =useState [false];
@@ -12,7 +12,7 @@ const NovedadesPage= (props)=>{
     useEffect (() => {
         const cargarNovedades =async() => {
             setLoading (true);
-            const response =await axios.get('http://localhost:3000/api/novedades');
+            const response =await axios.get('http://localhost:3000/api/novedades/usuario');
             setNovedades (response.data);
             setLoading (false);
         };
@@ -28,7 +28,7 @@ const NovedadesPage= (props)=>{
                     {loading ? (
                         <p>Cargando...</p>
                     ) : (
-                        novedades.map (item=> <NovedadItem key={item.id}
+                        novedades.map (item=> <NovedadItem key={item.item}
                             service= {item.servicio} time={item.plazo} imagen={item.imagen} description={item.descripcion} />)
                     )}
             </section>

@@ -19,7 +19,7 @@ router.get('/', async function (req, res, next) {
         width: 100,
         height: 100,
         crop: 'fill'
-      })
+      });
       return {
         ...novedad,
         imagen
@@ -30,7 +30,7 @@ router.get('/', async function (req, res, next) {
         imagen: ''
       }
     }
-  })
+  });
 
   res.render('admin/novedades', {
     layout: 'admin/layout',
