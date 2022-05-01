@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import NovedadItem from '../componentes/novedades/novedadItem';
+import NovedadItem from '../componentes/novedades/NovedadItem';
 
 
 /*import '../Styles/Novedades.css';*/
 
 const NovedadesPage= (props)=>{
-    const [loading, setLoading] =useState [false];
+    const [loading, setLoading] =useState (false);
     const [novedades, setNovedades] =useState([]);
 
     useEffect (() => {

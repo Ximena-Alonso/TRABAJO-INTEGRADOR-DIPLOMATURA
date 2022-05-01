@@ -11,6 +11,7 @@ import ContactoPage from "./Pages/ContactoPage.js";
 import GaleriaPage from "./Pages/GaleriaPage.js";
 import NormativaPage from "./Pages/NormativaPage.js";
 import NosotrosPage from "./Pages/NosotrosPage.js";
+import NovedadesPage from "./Pages/NovedadesPage.js";
 import ServiciosPage from "./Pages/ServiciosPage.js";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/Servicios" exact component={ServiciosPage}/>
         <Route path="/Galeria" exact component={GaleriaPage}/>
         <Route path="/Normativa" exact component={NormativaPage}/>
+        <Route path="/Novedades" exact component={NovedadesPage}/>
         <Route path="/Contacto" exact component={ContactoPage}/>
       </Switch>
       <Footer/>
