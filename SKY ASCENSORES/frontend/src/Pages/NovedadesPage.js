@@ -3,35 +3,37 @@ import axios from 'axios';
 import NovedadItem from '../componentes/novedades/NovedadItem';
 
 
-/*import '../Styles/Novedades.css';*/
+import '../Styles/Novedades.css';
 
-const NovedadesPage= (props)=>{
-    const [loading, setLoading] =useState (false);
-    const [novedades, setNovedades] =useState([]);
+const NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
 
-    useEffect (() => {
-        const cargarNovedades =async() => {
-            setLoading (true);
-            const response =await axios.get('http://localhost:3000/api/novedades/usuario');
-            setNovedades (response.data);
-            setLoading (false);
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
         };
 
-        cargarNovedades(); 
+        cargarNovedades();
     }, []);
 
 
     return (
-            <section className="holder" id='novedades'>
-            
-                    <h1>Novedades </h1>
-                    {loading ? (
-                        <p>Cargando...</p>
-                    ) : (
-                        novedades.map (item=> <NovedadItem key={item.item}
-                            service= {item.servicio} time={item.plazo} imagen={item.imagen} description={item.descripcion} />)
-                    )}
-            </section>
+        <section className="holder" id='novedades'>
+            <h2>Servicios que puede contratar</h2>
+            <div className='row'>
+
+                {loading ? (
+                    <p>Cargando...</p>
+                ) : (
+                    novedades.map(item => <NovedadItem key={item.item}
+                        service={item.Servicio} time={item.Plazo} imagen={item.imagen} descrip={item.Descripcion} />)
+                )}
+            </div>
+        </section>
     );
 }
 

@@ -45,22 +45,11 @@
     }
 }
 
-/*@keyframes scroll {
-	0% { margin-left: 0; }
-	50% { margin-left: 0;}
-
-    51% { margin-left:-100%; }
-	100% { margin-left: -100%;}
-}
-*/
  #nosotros .slider .personas {
     -webkit-animation: scroll 10s linear infinite ;
     animation: scroll 10s linear infinite ;
     display: flex;
-	width: calc(30%*6);  
-   
-    
-    
+	width: calc(30%*6);    
     
 }
 
@@ -73,14 +62,7 @@
     max-width: 30%;    
 }
 
-/*#nosotros .grupos:first-child{
-    margin-left: 0;
-}   
 
-#nosotros .grupos:last-child{
-    margin-right: 0;
-    break-after: right;
-}   */
 #nosotros .persona img{
     border-radius: 50%;
     margin: 0.8em;  
@@ -127,35 +109,13 @@
 		left: 0;
 		top: 0;
 	}    
-
-/*#nosotros .slider {
-        max-width: 100%;
-        width: 1000px;
-        display: flex;
-        position: relative;
-        border-radius: 6px;
-        overflow: hidden;
-}
-
-#nosotros .grupos {
-    display: flex;
-    flex-direction: row;
-    transform: translatex(0);
-    transition: all 600ms;
-    animation: scroll 10s linear infinite alternate ;
-
-
-}*/
-
-
-    
-    
+ 
 @media  (max-width:590px) {
      h3{
         font-size: 1.2em;
     }   
 
-     p{
+    #nosotros p{
         font-size: 0.83em;
     }   
 }
@@ -165,7 +125,13 @@
         font-size: 1em;
     }   
 
-     p{
+    #nosotros p{
         font-size: 0.73em;
+    }    
+    #nosotros .persona h5{
+        font-size: 0.83em;
+    }    
+    #nosotros .persona h6{
+        font-size: 0.76em;
     }    
 }

@@ -10,9 +10,8 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 
 /* GET novedades page. */
 router.get('/', async function (req, res, next) {
-  var usuario = req.session.nombre;
-  var novedades = await novedadesModel.getNovedades(usuario);
-
+  
+  var novedades = await novedadesModel.getNovedades();
   novedades = novedades.map(novedad => {
     if (novedad.img_id) {
       const imagen = cloudinary.image(novedad.img_id, {
@@ -59,13 +58,6 @@ router.post('/agregar', async (req, res, next) => {
     }
 
     if (req.body.Servicio != "" && req.body.Plazo != "" && req.body.Descripcion != "") {
-      let obj = {
-        usuario: usuario,
-        Servicio: req.body.Servicio,
-        Plazo: req.body.Plazo,
-        Descripcion: req.body.Descripcion
-      }
-
       console.log(img_id);
       await novedadesModel.insertNovedades({
         ...req.body,

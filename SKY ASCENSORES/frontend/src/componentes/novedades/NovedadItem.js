@@ -5,10 +5,10 @@ const NovedadItem = (props)=>{
 
     return (
             <div className="novedades">
-                    <h1>{service} </h1>
-                    <h2>{time} </h2>
-                    <img src={imagen}/>
-                    <div dangerouslySetInnerHTML={{__html: descrip}}/>
+                    <h3>{service} </h3>
+                    <h4>{time} </h4>
+                    <img className='imgNov' src={imagen}/>
+                    <div className='descripNov' dangerouslySetInnerHTML={{__html: descrip}}/>
                     <hr />
 
             </div>

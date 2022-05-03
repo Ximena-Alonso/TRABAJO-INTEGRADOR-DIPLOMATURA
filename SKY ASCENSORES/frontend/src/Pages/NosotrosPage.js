@@ -17,45 +17,45 @@ const NosotrosPage = (props) => {
                     <div className='container'>
                         <div className='slider'>
                             <div className='personas'>
-                                
-                                    <div className='persona' id='1'>
-                                        <img src='images/nosotros/nosotros1.jpg' alt='nosotros1'></img>
+
+                                <div className='persona' id='1'>
+                                    <figure><img src='images/nosotros/nosotros1.jpg' alt='nosotros1'></img>
                                         <h5>JUAN GOMEZ</h5>
                                         <h6>Gerente General</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
-                                    <div className='persona' id='2'>
-                                        <img src='images/nosotros/nosotros2.jpg' alt='nosotros2'></img>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
+                                <div className='persona' id='2'>
+                                    <figure><img src='images/nosotros/nosotros2.jpg' alt='nosotros2'></img>
                                         <h5>DIANA REYER</h5>
                                         <h6>Gerente Comercial</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
-                                    <div className='persona' id='3'>
-                                        <img src='images/nosotros/nosotros3.jpg' alt='nosotros3'></img>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
+                                <div className='persona' id='3'>
+                                    <figure><img src='images/nosotros/nosotros3.jpg' alt='nosotros3'></img>
                                         <h5>ROBERTO ZAPATO</h5>
                                         <h6>Gerente de Sistemas</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
-                                
-                                
-                                    <div className='persona' id='4'>
-                                        <img src='images/nosotros/nosotros4.jpg' alt='nosotros4'></img>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
+
+
+                                <div className='persona' id='4'>
+                                    <figure><img src='images/nosotros/nosotros4.jpg' alt='nosotros4'></img>
                                         <h5>SANDRA GUERRA</h5>
                                         <h6>Gerente de Marketing</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
-                                    <div className='persona' id='5'>
-                                        <img src='images/nosotros/nosotros5.jpg' alt='nosotros5'></img>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
+                                <div className='persona' id='5'>
+                                    <figure><img src='images/nosotros/nosotros5.jpg' alt='nosotros5'></img>
                                         <h5>LUCIANO CAKE</h5>
                                         <h6>Gerente de Logistica</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
-                                    <div className='persona' id='6'>
-                                        <img src='images/nosotros/nosotros6.jpg' alt='nosotros5'></img>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
+                                <div className='persona' id='6'>
+                                    <figure> <img src='images/nosotros/nosotros6.jpg' alt='nosotros5'></img>
                                         <h5>MARK WOODS</h5>
                                         <h6>Gerente de Imagen</h6>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p>
-                                    </div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing edivt. Doloribus quidem dolores pariatur ipsam nemo corporis non divbero, .</p></figure>
+                                </div>
                                 
                             </div>
                         </div>

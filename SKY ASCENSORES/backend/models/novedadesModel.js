@@ -3,9 +3,9 @@ const async = require('hbs/lib/async');
 
 
 /*trae para listar las novedades*/
-async function getNovedades(usuario) {       
+async function getNovedades() {       
     try {
-        var rows=await pool.query('select * from nov1 where usuario=? ',[usuario]);   
+        var rows=await pool.query('select * from nov1  ');   
         console.log(rows);
         return rows;
     } catch (error) {
