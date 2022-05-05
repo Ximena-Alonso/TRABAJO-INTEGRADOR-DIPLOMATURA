@@ -19,7 +19,7 @@ const ContactoPage = (props)=>{
     const handleChange = e=> {
         const {name, value} = e.target;
         setFormData (oldData => ({
-            oldData,
+            ...oldData,
             [name]: value
         }));
     }
