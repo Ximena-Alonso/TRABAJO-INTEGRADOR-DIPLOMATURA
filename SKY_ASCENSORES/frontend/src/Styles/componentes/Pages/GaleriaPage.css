@@ -1,0 +1,13 @@
+.galeria .foto{
+    display: inline-block;
+    width: 22%;
+    margin: 0.5em 0 0.5em 1%;
+    border: solid #dddd;
+    padding: 0.2em;
+    box-sizing: border-box;
+}
+
+.galeria .foto img{
+    display: block;
+    width: 100%;
+}

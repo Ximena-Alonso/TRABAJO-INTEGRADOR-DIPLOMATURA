@@ -1,0 +1,85 @@
+#empresa img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#empresa .eleccion{
+    line-height: 30px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+
+#empresa .eleccion h3{
+    margin-bottom: 10px;
+}   
+
+.accordion-button:not(.collapsed) {
+    background-color: black;
+}
+
+.accordion-button:focus {
+    box-shadow:none;
+}
+
+#empresa .row{
+    padding-top: 30px;
+    text-align: justify;
+}
+
+#empresa .card{
+    max-width: 300px;
+    margin-bottom: 15px;
+    border: solid steelblue 0.3px;
+    padding: inherit;
+    box-shadow: 20px 0 15px black;
+    transition: all 2s ease;
+}
+
+#empresa .card h5{
+    text-align: center;
+}
+
+#empresa .card:hover{
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1.05, 1);
+}
+
+@media  (max-width:590px) {
+    #empresa .row{
+        font-size: 0.9em;  
+    }
+
+    #empresa .accordion-button{
+        font-size: 0.6em;
+    }
+
+    #empresa .accordion-body{
+        font-size: 1em;
+    }
+    
+    #empresa .card-text {
+        font-size: 0.9em;
+    }
+  
+}
+
+@media  (max-width:390px) {
+    #empresa .row{
+        font-size: 0.7em;  
+    }
+
+    #empresa .accordion-button{
+        font-size: 0.5em;
+    }
+
+    #empresa .accordion-body{
+        font-size: 0.8em;
+    }
+    
+    #empresa .card-text {
+        font-size: 1em;
+    }
+  
+   
+}

@@ -1,0 +1,120 @@
+#contacto .columnas{
+    margin-top: 40px;
+    display: flex;
+}
+
+#contacto .columna{
+    box-sizing: border-box;
+    padding: 1em;
+   
+}
+
+#contacto .columna h2, 
+#contacto .columna h3{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+#contacto  p{
+    margin: 5px;
+}
+
+#contacto .columna.left{
+   width: 40%;
+}
+
+#contacto .redes {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto .redes i {
+    padding-bottom: 10px;
+    font-size: 1em;
+    
+    
+}
+
+#contacto i:hover{
+    color: rgba(0,0,0,0.3);
+}
+
+#contacto .columna.right{
+    break-before: column ;
+    width: 60%;    
+}
+
+#contacto .formulario label{
+    vertical-align: top;
+    width: 25%;
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#contacto .formulario input,
+#contacto .formulario textarea{
+    background-color: #dddd;
+    border-radius: 5px;
+    border: solid 1px #999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+}
+
+#contacto .formulario input{
+    width: 70%;
+    height: 30px;
+}
+
+#contacto .formulario textarea{
+    width: 70%;
+    height: 100px;
+    resize: none;
+}
+
+#contacto .formulario input[type="submit"]  {
+    width: auto;
+    background-color: rgb(6, 65, 65);
+    box-shadow: 0 0 10px rgb(85, 84, 84);
+    color: white;
+    cursor: pointer;
+}
+
+#contacto .formulario .centrar{
+    margin-left: 25%;
+}
+
+@media  (max-width:590px) {   
+    #contacto .redes i {
+        font-size: 0.83em;
+      
+    }
+
+    #contacto .formulario label{
+        font-size: 0.8em;
+    }
+}
+
+@media  (max-width:490px) {
+    #contacto .columnas{
+        display: block;
+    }
+
+    #contacto .columna.left{
+        width: 100%;
+    }
+
+    #contacto .columna.columna.right{
+        width: 100%;
+    }
+/*
+    
+    #contacto .redes i {
+        font-size: 0.7em;
+        font-weight: 400;
+    }
+*/
+  
+}

@@ -1,0 +1,68 @@
+#servicios .ser_img img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#servicios .ser_img h3{
+    text-align: center;
+    line-height: 30px;
+}
+
+#servicios .servicios{
+    border: solid grey 1px;
+    border-radius: 1em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+    width: 100%;
+}
+
+#servicios .servicios h4{
+    font-style: italic;
+    border-bottom: 1px solid rgb(18, 126, 161);
+    margin: 10px 0;
+}
+
+#servicios .servicios p{
+    text-align: justify;
+}
+
+#servicios .servicios .ser_info{
+    width: 75%;
+}
+
+#servicios .servicios img{
+    border-radius: 1em;
+    width: 20%;
+}
+
+#servicios .servicios:nth-child(even) img{
+    float: right;
+}
+
+#servicios .servicios:nth-child(even) .ser_info{
+    float: left;
+}
+
+#servicios .servicios:nth-child(odd) img{
+    float: left;
+}
+
+#servicios .servicios:nth-child(odd) .ser_info{
+    float: right;
+}
+
+@media  (max-width:590px) {
+    #servicios .servicios .ser_info,
+    #servicios .servicios img{
+        float: none  !important;
+    }
+   
+    #servicios .servicios .ser_info{
+        width: 100%;
+    }   
+    
+    #servicios .servicios img{
+        display: none;
+    }
+}

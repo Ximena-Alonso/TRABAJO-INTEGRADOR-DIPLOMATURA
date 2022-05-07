@@ -1,0 +1,42 @@
+footer .row{
+    clear: both;
+    border-top: rgb(85, 84, 84) solid 1px;
+    margin-top: 10px;
+    display: flex;
+    background-color:#bef6e9;
+    height: 70px;
+    align-items: center; 
+}
+
+footer .columna1{
+    width: 70%;
+    font-size: 1.1em;   
+}
+
+footer .columna2{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer i{
+    font-size: 25px;
+}
+
+footer h5{
+    color: black;
+}
+
+footer i:hover{
+    color: rgba(0,0,0,0.3);
+}
+
+
+@media  (max-width:520px) {
+    footer h5 {
+        font-size: 0.8em;
+    }   
+
+    .fab, .far, .fas {
+        font-size: 20px;
+    }
+}
